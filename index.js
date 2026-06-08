@@ -5,7 +5,7 @@ const path = require("path")
 
 const corsOptions = {
     origin: function (origin, callback) {
-        const allowedOrigins = ["http://localhost:5173","http://localhost:8000"];
+        const allowedOrigins = ["http://localhost:5173","http://localhost:8000","https://heritage-ally-server.onrender.com/"];
 
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
