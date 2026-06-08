@@ -25,9 +25,9 @@ app.use(cors(corsOptions))
 
 app.use(express.json())
 app.use("/public", express.static("./public"))
+app.use("/api", Router)
 app.use(express.static(path.join(__dirname, 'dist')))
 
-app.use("/api", Router)
 app.use((req, res) => {
     express.static(path.join(__dirname, 'dist'))
 });
