@@ -14,7 +14,7 @@ const corsOptions = {
         }
     },
     credentials: true,
-};
+}; 
 
 require("dotenv").config()
 require("./db-connect")
